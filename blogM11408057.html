@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>越夜越美味！夜市美食全攻略</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'night-black': '#0a0a0c',
+                        'neon-amber': '#ff9f1c',
+                        'neon-crimson': '#ff4d6d',
+                        'glass-white': 'rgba(255, 255, 255, 0.05)',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e2e8f0;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+        }
+        .neon-text-glow {
+            text-shadow: 0 0 15px rgba(255, 159, 28, 0.5);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #ff9f1c 0%, #ff4d6d 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .banner-mask {
+            mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+
+    <!-- Progress Bar -->
+    <div class="fixed top-0 left-0 w-full h-1 z-50">
+        <div id="progress" class="h-full bg-gradient-to-r from-neon-amber to-neon-crimson w-0 transition-all duration-150"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="relative w-full min-h-[85vh] flex items-end justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="banner-mask w-full h-full">
+                <img src='https://opal.google/board/blobs/b2831075-edc0-4d9a-8d3d-7ba383d84f90' alt='Night Market Banner' class="w-full h-full object-cover scale-105 transition-transform duration-[10s] hover:scale-100" />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-night-black via-transparent to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 container mx-auto px-6 pb-20 text-center">
+            <span class="inline-block py-1 px-4 mb-4 rounded-full border border-neon-amber/30 bg-neon-amber/10 text-neon-amber text-xs font-bold uppercase tracking-widest animate-pulse-slow">
+                Featured Article • M11408057
+            </span>
+            <h1 class="font-display text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight">
+                越夜越美味！<br/>
+                <span class="gradient-text">從路邊攤到米其林的</span><br/>
+                「夜市美食」全攻略
+            </h1>
+            <div class="flex items-center justify-center space-x-4 text-gray-400 font-medium">
+                <span class="flex items-center">
+                    <svg class="w-5 h-5 mr-2 text-neon-crimson" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    Reading: 6 mins
+                </span>
+                <span class="w-1 h-1 bg-gray-600 rounded-full"></span>
+                <span>Taipei Culture</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 -mt-10 relative z-20 max-w-5xl">
+        <!-- Lead Section -->
+        <div class="glass-card p-8 md:p-12 mb-16 shadow-2xl">
+            <p class="text-xl md:text-2xl leading-relaxed text-gray-200 first-letter:text-5xl first-letter:font-bold first-letter:mr-3 first-letter:float-left first-letter:text-neon-amber">
+                在台灣，無論是升官發財的狂歡，還是失戀落魄的自我療癒，最後的終點往往不是高級餐廳，而是那條煙火氣繚繞的街巷。我們總習慣在暮色降臨時，走向那片由燈火與油煙構築的烏托邦，進行一場名為「掃街」的集體儀式。
+            </p>
+        </div>
+
+        <!-- Section 1: The Magic -->
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-24 items-start">
+            <div class="lg:col-span-7 space-y-8">
+                <div class="flex items-center space-x-4 mb-4">
+                    <div class="w-12 h-1 bg-neon-amber"></div>
+                    <h2 class="text-3xl font-bold font-display tracking-tight">「小吃化」的精緻魔力</h2>
+                </div>
+                <p class="text-lg text-gray-400 leading-relaxed">
+                    這種獨特的吸引力，源自於「小吃化」（Small Eats）的精緻魔力。不同於法式料理的漫長節奏，夜市將美味濃縮在小份量的盤子裡，讓饕客得以在一次巡禮中，橫跨十數個攤位，完成一場舌尖上的馬拉松。
+                </p>
+                <div class="bg-white/5 border-l-4 border-neon-crimson p-6 rounded-r-xl italic text-gray-300">
+                    "那種直擊官能的「鑊氣」，是老闆在大火翻炒間與時間的博弈；而那份「隨性」則是最高級的自由。"
+                </div>
+                <p class="text-lg text-gray-400 leading-relaxed">
+                    無需預約、不必著裝，腳踩夾腳拖也能在街頭邂逅五星級的味覺體驗。在這裡，創意是沒有邊界的，從堅守百年的古早味到奇想天開的炸鮮奶、起司馬鈴薯，夜市就是一座不斷自我進化的飲食實驗室。
+                </p>
+            </div>
+            
+            <aside class="lg:col-span-5">
+                <div class="glass-card p-8 border-neon-amber/20 sticky top-24 transform hover:scale-[1.02] transition-transform">
+                    <h3 class="text-neon-amber font-bold text-xl mb-4">夜市精神指標</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="w-6 h-6 rounded-full bg-neon-amber/20 text-neon-amber flex items-center justify-center mr-3 mt-1 text-xs">01</span>
+                            <span class="text-gray-300">不限著裝的自由</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-6 h-6 rounded-full bg-neon-amber/20 text-neon-amber flex items-center justify-center mr-3 mt-1 text-xs">02</span>
+                            <span class="text-gray-300">百元內的高CP值</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-6 h-6 rounded-full bg-neon-amber/20 text-neon-amber flex items-center justify-center mr-3 mt-1 text-xs">03</span>
+                            <span class="text-gray-300">超越國界的混血創意</span>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </section>
+
+        <!-- Bento Grid: History & Evolution -->
+        <section class="mb-24">
+            <div class="flex items-center space-x-4 mb-12 justify-center">
+                <div class="w-12 h-1 bg-neon-crimson"></div>
+                <h2 class="text-4xl font-bold font-display tracking-tight text-center">時光流轉的味覺軌跡</h2>
+                <div class="w-12 h-1 bg-neon-crimson"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-6 gap-6">
+                <div class="md:col-span-4 glass-card p-10 hover:bg-white/[0.05] transition-colors group">
+                    <h3 class="text-2xl font-bold mb-4 group-hover:text-neon-amber transition-colors">溯源：從唐宋宵禁到汴京繁華</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        若我們撥開歷史的煙雲，會發現夜市的存在本身就是一場對規矩的叛逆。在唐代，嚴格的「坊市制度」將生活與交易切割得涇渭分明，夜間更是實行宵禁。然而，隨著宋代都市文化的崛起，這道牆轟然倒塌，汴京城內出現了「深夜食堂」，如《東京夢華錄》所載，肉餅與滴酥鮑螺在月色下飄香。
+                    </p>
+                </div>
+                <div class="md:col-span-2 glass-card p-10 flex flex-col justify-center items-center bg-gradient-to-br from-neon-amber/20 to-transparent border-neon-amber/10">
+                    <div class="text-4xl font-black mb-2 text-neon-amber">1000+</div>
+                    <div class="text-gray-400 font-bold tracking-widest text-sm">YEARS OF HISTORY</div>
+                </div>
+                
+                <div class="md:col-span-2 glass-card p-8 border-neon-crimson/10 overflow-hidden relative group">
+                    <div class="relative z-10">
+                        <span class="text-xs font-bold text-neon-crimson uppercase tracking-wider mb-2 block">Stage 01</span>
+                        <h4 class="text-xl font-bold mb-2">廟口求飽期</h4>
+                        <p class="text-sm text-gray-400">依附於廟口，提供廉價高熱量的能量來源。如基隆廟口、大稻埕。</p>
+                    </div>
+                    <div class="absolute -right-4 -bottom-4 opacity-5 group-hover:opacity-10 transition-opacity">
+                        <svg class="w-32 h-32" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L4.5 20.29L5.21 21L12 18L18.79 21L19.5 20.29L12 2Z"/></svg>
+                    </div>
+                </div>
+                
+                <div class="md:col-span-2 glass-card p-8 border-white/5 overflow-hidden relative group">
+                    <div class="relative z-10">
+                        <span class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2 block">Stage 02</span>
+                        <h4 class="text-xl font-bold mb-2">圓環繁榮期</h4>
+                        <p class="text-sm text-gray-400">隨交通樞紐興起，美食成為城市擴張與移民遷徙的副產品。</p>
+                    </div>
+                </div>
+                
+                <div class="md:col-span-2 glass-card p-8 border-neon-amber/10 overflow-hidden relative group bg-neon-amber/5">
+                    <div class="relative z-10">
+                        <span class="text-xs font-bold text-neon-amber uppercase tracking-wider mb-2 block">Stage 03</span>
+                        <h4 class="text-xl font-bold mb-2">觀光精緻期</h4>
+                        <p class="text-sm text-gray-400">今日的夜市，已轉化為一種高度組織化的娛樂與文化體驗。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Michelin Section -->
+        <section class="mb-24 relative">
+            <div class="absolute inset-0 bg-neon-crimson/5 blur-3xl rounded-full"></div>
+            <div class="relative glass-card p-10 md:p-16 border-neon-crimson/20">
+                <div class="max-w-3xl mx-auto text-center">
+                    <div class="inline-block p-4 rounded-2xl bg-white/5 mb-8 animate-float">
+                         <svg class="w-12 h-12 text-neon-crimson" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-8 font-display">當「米其林」遇上「必比登」</h2>
+                    <p class="text-lg text-gray-300 leading-relaxed mb-8">
+                        這份熱氣騰騰的庶民文化已成為台灣向世界遞出的「國家名片」。最令人玩味的現象，莫過於當象徵西方精英飲食權威的「米其林指南」遇上路邊攤。
+                    </p>
+                    <p class="text-lg text-gray-400 leading-relaxed">
+                        當標章貼在油膩的攤車上時，不僅提升了小吃的社會地位，也引發了我們對「品味」定義的再思考：原來，最高的美味往往隱身於最平凡的煙火之中。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Challenges & Future -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-24">
+            <div class="space-y-6">
+                <h3 class="text-2xl font-bold flex items-center">
+                    <span class="w-8 h-8 rounded-lg bg-red-500/20 text-red-500 flex items-center justify-center mr-3 text-sm">!</span>
+                    繁華背後的隱憂
+                </h3>
+                <div class="space-y-4 text-gray-400">
+                    <p>首當其衝的是衛生問題，如何在維持露天風情的同時，解決油煙、環境與衛生頑疾？</p>
+                    <p>更深層的隱憂則是「同質化」的侵蝕。當全台夜市被地瓜球、大雞排等連鎖攤位「複製貼上」時，各地的文化特色正逐漸消逝。</p>
+                </div>
+            </div>
+            <div class="space-y-6">
+                <h3 class="text-2xl font-bold flex items-center">
+                    <span class="w-8 h-8 rounded-lg bg-green-500/20 text-green-500 flex items-center justify-center mr-3 text-sm">→</span>
+                    科技與傳統的共生
+                </h3>
+                <div class="space-y-4 text-gray-400">
+                    <p>展望未來，夜市正在轉型。行動支付普及化，外送平台則讓路邊攤轉型為區域性的「雲端廚房」。</p>
+                    <p>環境意識的覺醒正推動著「綠色夜市」的轉型，從高效能油煙過濾到循環餐具，逛夜市也可以是很環保的 ESG 實踐。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA/Summary -->
+        <section class="mb-32 text-center py-20 bg-gradient-to-t from-neon-amber/10 to-transparent rounded-[40px]">
+            <h2 class="text-4xl md:text-5xl font-black mb-8 font-display">今晚，你準備選哪一攤？</h2>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed px-6">
+                夜市美食，始終是我們生活圈中最溫柔的底色。在享受那份熱騰騰的美味時，也請支持那些用心經營的優質攤商，因為我們守護的不僅是食物的味道，更是那份獨一無二的文化體溫。
+            </p>
+            <div class="mt-12">
+                <button class="px-10 py-4 bg-neon-amber hover:bg-white text-night-black font-black rounded-full transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-[0_0_30px_rgba(255,159,28,0.3)]">
+                    尋找附近的美味
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Progress bar logic
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progress').style.width = scrolled + "%";
+        });
+
+        // Simple Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section, .glass-card').forEach(el => {
+            el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
